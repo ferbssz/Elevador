@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+<body>
+
+  <div id="exemplo"></div>
+  
+  
+  
+  <script type="text/javascript">
+
+    class Elevador {
+        constructor(andaratual, totalandar, capacelevador, pessoaspresentes) {
+            this.andaratual = 0;
+            this.totalandar = 10;
+            this.capacelevador = 9;
+            this.pessoaspresentes = 0;
+        }
+            Entra() {
+            if (pessoaspresentes < capacelevador) {
+                pessoaspresentes += 1
+            } else {
+                alert("Capacidade maxima excedida")
+            }
+        }
+            Sair(){ 
+            if (pessoaspresentes > 0) {
+                pessoaspresentes -= 1
+            } else {
+                alert("Não há ninguem no elevador")
+            }
+        }
+            Descer() {
+            if (andaratual > 0) {
+                pessoaspresentes -= 1
+            } else{
+                alert("O elevador se encontra no terro, não tem como descer")
+            }
+        }
+            Subir() {
+            if (andaratual < totalandar) {
+                andaratual += 1
+            } else {
+                alert("O elevador ja se encontra no ultimo andar, não é possivel subir")
+            }
+
+        }
+
+        }
+    
+
+
+
+    
+
+  </script>
+
+</body>
+</html>
